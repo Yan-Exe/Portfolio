@@ -233,8 +233,7 @@ body {
 .projetos__projetos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1%;
+    gap: 5%;
 }
 .projetos__cards {
     background: rgb(0,0,0);
@@ -447,6 +446,7 @@ body {
     }
     .sobre-mim {
         padding: 0;
+        padding-bottom: 50%;
         margin: 0;
     }
     .sobre-mim__texto {
@@ -659,6 +659,7 @@ body {
     }
     .card__descricao {
         font-size: 1.2rem;
+        line-height: 110%;
     }
     .swiper {
         display: block;
