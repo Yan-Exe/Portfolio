@@ -657,6 +657,9 @@ body {
     .cards:hover {
         transform: scale(1.0);
     }
+    .card__descricao {
+        font-size: 1.2rem;
+    }
     .swiper {
         display: block;
         transform: translate(7% , 0%)
