@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+    <title>Portfolio  Yan</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__nome">
+            <img class="cabecalho__imagem" src="imagens/codigo.png" alt="icone de codigo">
+            <h2 class="cabecalho__texto">Yan Patrick</h2>
+        </div>
+        <div class="cabecalho__conteudo">
+            <div class="container">
+            <input class="cabecalho__botao" type="checkbox" name="#" id="menu">
+            <label class="cabecalho__rotulo" for="menu">
+                <span class="cabecalho__menu"></span>   
+            </label> 
+            <ul class="cabecalho__links">
+                <li class="cabecalho__lista"><a class="links__link" href="#inicio">INICIO</a></li>
+                <li class="cabecalho__lista"><a class="links__link" href="#sobre-mim">SOBRE MIM</a></li>
+                <li class="cabecalho__lista"><a class="links__link" href="#projetos">PROJETOS</a></li>
+                <li class="cabecalho__lista"><a class="links__link" href="#habilidades"">HABILIDADES</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__home" id="inicio">
+            <div class="conteudo__texto efeite-reveal">
+                <h2 class="home__subtitulo">OLA, EU SOU O <strong class="foco">YAN</strong></h2>
+                <h1 class="home__titulo"><strong class="foco">DESENVOLVEDOR</strong> <br> JUNIOR
+                    <ul class="home__contatos">
+                        <li class="contatos__item"><a href="https://github.com/Yan-Exe" target="_blank"><img class="home__imagem" src="imagens/github.png" alt="link do github"></a></li>
+                        <li class="contatos__item"><a href="https://www.linkedin.com/in/yan-patrick" target="_blank"><img class="home__imagem" src="imagens/linkedin.png" alt="link do linkedin"></a></li>
+                        <li class="contatos__item"><a href="https://drive.google.com/uc?export=download&id=1l8tSlFLexb-vI7xu6Vm5rYlLxY8rmVRF" ><img class="home__imagem" src="imagens/curriculo.png" alt="link do curriculo"></a></li>
+                    </ul>
+                </h1>
+                <p class="home__descricao">Atualmente cursando Análise e Desenvolvimento de Sistemas e me aperfeiçoando atraves de cursos complementares. <br>Com conhecimentos nas tecnologias <strong class="foco">Python</strong>, <strong class="foco">JavaScript</strong>, <strong class="foco">HTML</strong> e <strong class="foco">CSS</strong>. Estou buscando adentrar me especializar na área. <br>Vamos conversar?</p>    
+            </div>
+            <img class="home__foto efeite-reveal" src="imagens/foto.png" alt="foto minha">
+        </section>
+        <section class="sobre-mim efeite-reveal" id="sobre-mim">
+            <img class="sobre-mim__foto" src="imagens/programando.png" alt="programando">
+            <div class="sobre-mim__conteudo">
+                <h2 class="sobre-mim__titulo">Sobre mim</h2>
+                <p class="sobre-mim__texto">Olá! Meu nome é Yan Patrick, tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas. Além disso, estou constantemente me aperfeiçoando por meio de cursos e buscando oportunidades para ingressar na área de desenvolvimento de software. Estou sempre preparado para adquirir mais conhecimento e enfrentar novos desafios.</p>
+                <div class="texto__oculto">
+                    <p class="sobre-mim__texto">Desde cedo, sempre tive muito contato com computadores, o que despertou meu interesse genuíno pela área de tecnologia. Confesso que inicialmente, nunca tinha tido nenhuma experiência com programação, mas decidi me dedicar totalmente a essa área e desde então tenho me empenhado para me tornar um desenvolvedor competente.
+                        <br>Estou prestes a me formar este ano e, além da formação acadêmica, tenho investido em cursos adicionais para complementar meus estudos. Atualmente, possuo conhecimento em linguagens como HTML, CSS, JavaScript e Python. Continuo me aprofundando nessas tecnologias enquanto também busco aprender novas habilidades e ferramentas que possam enriquecer meu repertório. 
+                        <br>Estou determinado a seguir carreira no desenvolvimento de software e acredito que minha paixão pela tecnologia, combinada com minha dedicação ao aprendizado contínuo, me tornará um profissional valioso. Estou ansioso para contribuir com projetos desafiadores e colaborar com equipes talentosas, sempre com o objetivo de criar soluções inovadoras e eficazes.
+                    </p>
+                </div>
+                <button class="ocultar__texto" onclick="toggleTexto()">Ver mais</button>    
+            </div>
+        </section>
+        <section class="projetos efeite-reveal" id="projetos">
+            <div class="projetos__conteudo efeite-reveal">
+                <h2 class="projetos__titulo">PROJETOS</h2>
+                <div class="projetos__projetos"> 
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                    <div class="projetos__cards">
+                        <p class="projetos_descricao">EM BREVE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="habilidades efeite-reveal" id="habilidades">
+               <h2 class="habilidades__titulo">Habilidades</h2> 
+                    <div class="habilidades__cards">
+                        <div class="cards python">
+                            <img class="card__imagem" src="imagens/python.png" alt="logo python">
+                            <p class="card__descricao">Conhecimento em <strong class="foco">Python</strong>, com foco em orientação a objetos, APIs e Django. Minha formação inclui cursos que me proporcionaram uma base sólida nesses tópicos. Tenho experiência prática em desenvolver pequenos projetos.</p>
+                        </div>
+                        <div class="cards html">
+                            <img class="card__imagem" src="imagens/html.png" alt="logo html">
+                            <p class="card__descricao">Conhecimento <strong class="foco">HTML</strong> para criar estruturas semânticas e acessíveis em projetos web. Com garantindo uma estrutura clara e organizada. E compreensao da importância de atributos e práticas recomendadas para melhorar a acessibilidade e a indexação em motores de busca. </p>
+                        </div>
+                        <div class="cards css">
+                            <img class="card__imagem imagem__css" src="imagens/css.png" alt="logo css">
+                            <p class="card__descricao"> Conhecimento em <strong class="foco">CSS</strong> para estilização de páginas web, com técnicas de posicionamento de elementos e estilização de texto e imagens para criar layouts modernos e responsivos para criar designs flexíveis e complexos. </p>
+                        </div>
+                        <div class="cards javascript">
+                            <img class="card__imagem" src="imagens/javascript.png" alt="logo javascript">
+                            <p class="card__descricao"> Conhecimento em <strong class="foco">JavaScript</strong> com foco em desenvolvimento web, APIs e frameworks modernos. Tenho experiência prática em desenvolver pequenos projetos, onde apliquei meus conhecimentos na criação de interfaces de usuário interativas e dinâmicas.</p>
+                        </div>
+                    </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">    
+                        <div class="swiper-slide">
+                            <div class="cards python">
+                                <img class="card__imagem" src="imagens/python.png" alt="logo python">
+                                <p class="card__descricao">Conhecimento em <strong class="foco">Python</strong>, com foco em orientação a objetos, APIs e Django. Minha formação inclui cursos que me proporcionaram uma base sólida nesses tópicos. Tenho experiência prática em desenvolver pequenos projetos.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards html">
+                                <img class="card__imagem" src="imagens/html.png" alt="logo html">
+                                <p class="card__descricao">Conhecimento <strong class="foco">HTML</strong> para criar estruturas semânticas e acessíveis em projetos web. Com garantindo uma estrutura clara e organizada. E compreensao da importância de atributos e práticas recomendadas para melhorar a acessibilidade e a indexação em motores de busca. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards css">
+                                <img class="card__imagem imagem__css" src="imagens/css.png" alt="logo css">
+                                <p class="card__descricao"> Conhecimento em <strong class="foco">CSS</strong> para estilização de páginas web, com técnicas de posicionamento de elementos e estilização de texto e imagens para criar layouts modernos e responsivos para criar designs flexíveis e complexos. </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards javascript">
+                                <img class="card__imagem" src="imagens/javascript.png" alt="logo javascript">
+                                <p class="card__descricao"> Conhecimento em <strong class="foco">JavaScript</strong> com foco em desenvolvimento web, APIs e frameworks modernos. Tenho experiência prática em desenvolver pequenos projetos, onde apliquei meus conhecimentos na criação de interfaces de usuário interativas e dinâmicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                    </div>
+                    <div class="swiper-button-next">
+
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper">
+                        <div class="swiper-pagination">
+                    </div>
+                </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+            });            
+        </script>
+
+    </main>
+    <footer class="rodape ">
+        <section class="rodape__conteudo">
+            <div class="rodape__tudo">
+                <div class= rodape__descricao">
+                    <div class="rodape__contatos__extra ">
+                        <img class="contatos__imagem __nome" src="imagens/codigo.png" alt="icone de codigo">
+                        <h2 class="rodape__contato-texto __nome_texto">Yan Patrick</h2>
+                    </div>
+                    <div class="rodape__contatos__extra __email">
+                        <img class="contatos__imagem email" src="imagens/email.png" alt="icone de email">
+                        <p class="rodape__contato-texto">yanpatrick199@gmail.com</p>
+                    </div>
+                    <div class="rodape__contatos__extra __telefone">
+                        <img class="contatos__imagem telefone" src="imagens/telefone.png" alt="icone de telefone">
+                        <p class="rodape__contato-texto "> (62) 9 9360-8802</p>
+                    </div>
+                </div>
+                <div class="conteudo__titulo">
+                    <h2 class="rodape__titulo">ENTRE EM CONTATO</h2>
+                    <div class="rodape__contatos">
+                        <ul class="contatos__icones">
+                            <li class="contatos__rodape"><a href="https://github.com/Yan-Exe" target="_blank"><img class="imagens__rodape" src="imagens/github.png" alt="link do github"></a></li>
+                            <li class="contatos__rodape"><a href="https://www.linkedin.com/in/yan-patrick " target="_blank"><img class="imagens__rodape" src="imagens/linkedin.png" alt="link do linkedin"></a></li>
+                            <li class="contatos__rodape"><a href="https://wa.me/5562993608802" target="_blank"><img class="imagens__rodape" src="imagens/whatsapp.png" alt="link do whatsapp"></a></li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <p class="rodape__texto">@2024 | Design and Code by Yan Patrick.</p>  
+    </footer>
+</body>
+</html>
