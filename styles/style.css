@@ -221,7 +221,6 @@ body {
     background: rgb(94,94,94);
     background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(217,217,217,1) 15%, rgba(255,255,255,1) 50%, rgba(217,217,217,1) 85%, rgba(94,94,94,1) 100%);
     position: relative;
-
 }
 .projetos__titulo {
     font-size: 4rem;
@@ -233,7 +232,7 @@ body {
 .projetos__projetos {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 2%;
 }
 .projetos__cards {
     background: rgb(0,0,0);
