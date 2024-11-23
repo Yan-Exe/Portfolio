@@ -14,7 +14,7 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: var(--cor-branco);
     overflow-x: hidden; 
     position: relative;
 }
@@ -22,7 +22,7 @@ body {
 .cabecalho{
     padding: 1% 0% 1% 0% ;
     background: var(--cor-preto);
-    border-bottom: 4px solid var(--cor-cinza-escuro);
+    border-bottom: 4px solid var(--cor-preto);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -90,15 +90,15 @@ body {
     font-weight: 400;
 }
 .conteudo__home{
-    background: rgb(0,0,0);
-    background: linear-gradient(240deg, rgba(0,0,0,1) 0%, rgba(78,78,78,1) 25%, rgba(217,217,217,1) 50%, rgba(78,78,78,1) 75%, rgba(0,0,0,1) 100%);
-    padding: 5% 7% 12% 7%;
+    background: rgb(250,251,255);
+    background: radial-gradient(circle, rgba(250,251,255,1) 0%, rgba(232,232,232,1) 43%, rgba(150,150,150,1) 100%);
+    padding: 7% 0 12% 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: 6px solid var(--cor-preto);
     position: relative;
-    color: var(--cor-branco);
+    color: var(--cor-preto);
 }
 
 .foco {
@@ -108,10 +108,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 4% 15% 0 0%;
     width: 50%;
 }
 .home__titulo {
-    font-size: 6rem;
+    font-size: 9rem;
     font-weight: 700;
     margin-top: 0.5rem;
 }
@@ -121,9 +122,9 @@ body {
     padding: 0 0 0 2.5%;
 }
 .home__descricao {
-    font-size: 1.5rem;
-    padding: 3% 0 0 2.5%;
-    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0% 10% 0 2.5%;
+    margin-top: 1rem;
     letter-spacing: 0.1rem;
 }
 .home__contatos {
@@ -143,26 +144,22 @@ body {
     transform: scale(1.15);
     transition: 0.1s;
 }
+.home__texto {
+    padding-left: 10%;
+}
 .home__foto {
-    width: 35%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    padding-top: 5%;
+    display: none;
 }
-.home__foto:hover {
-    transition: 5s;   
-    -webkit-filter: grayscale(0%); 
-    filter: grayscale(0%); 
-    transition: filter 0.5s ease;
-}
+
 
 
 
 .sobre-mim {
-    padding: 2% 10% 4% 10%;
+    padding: 8% 10% 8% 10%;
     background: var(--cor-branco);
     display: flex;
+    justify-content: center;
+    flex-direction: row;
     gap: 7rem;  
 }
 .sobre-mim__conteudo {
@@ -178,8 +175,14 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
 }
+.minha__foto {
+    width: 40%;
+    height: 50%;
+    -webkit-filter: grayscale(20%);
+    padding-top: 4% 0 1% 0;
+}
 .sobre-mim__texto {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0 0 0 2.5%;
     margin-top: 1rem;
     align-self: center;
@@ -191,6 +194,7 @@ body {
     width: 50%;
     object-fit: contain;
     padding-bottom: 9rem ;
+    display: none;
 }
 .ocultar__texto{
     border: #0D0D0D solid 2px;
@@ -302,15 +306,11 @@ body {
     border-radius: 2%;    
     width: 20rem;
     height: 40em;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
     margin-top: 3rem;
 }
 .cards:hover{
     transform: scale(1.1);
-    transition: 0.5s;   
-    -webkit-filter: grayscale(0%); 
-    filter: grayscale(0%); 
+    transition: 0.5s;  
 }
 .card__imagem {
     padding: 2.5rem;
@@ -383,7 +383,7 @@ body {
 .rodape__titulo {
     font-size: 2.2rem;
     font-weight: 500;
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.4rem; 
 }
 .contatos__icones {
     display: flex;
@@ -435,6 +435,7 @@ body {
         gap: 4rem;
     }
     .home__foto {
+        display: block;
         padding: 25% 0 0 0;
         width: 50%;
     }
@@ -611,9 +612,13 @@ body {
         padding: 0 60% 5% 0;
     }
     .sobre-mim__foto {
+        display: block;
         width: 100%;
         padding: 0% 0 15% 0; 
         margin: 0;
+    }
+    .minha__foto {
+        display: none;
     }
     .ocultar__texto {
         width: 10rem;  
@@ -639,7 +644,7 @@ body {
     }
 
     .cards {
-        width:  17rem;
+        width: 17rem;
         height: 40rem;
         
     }
