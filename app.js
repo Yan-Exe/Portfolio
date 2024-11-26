@@ -1,12 +1,9 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const scrollReveal = ScrollReveal({
         origin: 'auto',
-        distance: '10px',
-        duration: 700,
+        distance: '5px', // Reduz a distância para começar a aparecer
+        duration: 500, // Diminui o tempo para a animação
         reset: true
-        
     });
 
     scrollReveal.reveal('.efeite-reveal', {
@@ -42,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
+        spaceBetween: 5,
         slidesPerView: 1,
         loop: true,
         navigation: {
@@ -58,6 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
-
-
-

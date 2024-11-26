@@ -429,69 +429,93 @@ body {
 
 @media screen and (max-width: 1366px) {
 
-
-    .conteudo__titulo {
-        padding-left: 0.1%;
-        gap: 4rem;
+         .home__titulo-container { 
+            flex-direction: column; 
+            text-align: center; 
+        }
+        .home__titulo {
+            font-size: 6rem; 
+            text-align: center;
+        }
+        .home__subtitulo {
+            padding-left: 10%;
+        }
+        .home__contatos { 
+            justify-content: center;
+        }
+        .home__contatos li { 
+            width: 6rem;
+            gap: 0%;
+        }
+        .home__foto {
+            display: none;
+            padding: 25% 0 0 0;
+            width: 50%;
+        }
+        .contatos__item img{
+            max-width: 90%;
+        }
+        .conteudo__texto {
+            padding-top: 0;
+            padding-left: 5%;
+            width: 100%;
+            height: 40rem;
+        }
+        .conteudo__titulo {
+            padding-left: 0.1%;
+            gap: 4rem;
+        }
+        .sobre-mim {
+            max-width: 100%;
+            padding: 6% 0 20% 0;
+            margin: 0;
+        }
+        .sobre-mim__texto {
+            line-height: 1.5rem;
+            letter-spacing: 0.05rem;
+            width:90%;
+            font-size: 1.2rem; 
+        }
+        .texto__oculto {
+            width:100%;
+        }
+        .habilidades {
+            padding: 2% 15% 20% 15%;
+        }
+        .ocultar__texto {
+            width: 10rem;
+            height: 5rem;
+        }
+        .sobre-mim__foto {
+            margin-top: 12rem;
+        }
+        .projetos__titulo {
+            padding-top: 5%;
+            padding-bottom: 5rem;
+        }
+        .projetos__cards {
+            width:  15rem;
+            height: 15rem;
+        }
+        .projetos__projetos .projetos__cards:nth-child(n+5) {
+            display: none;
+        }
+        .projetos__cards {
+            width: 25rem;
+            height: 25rem;
+        }
+        .card__descricao {
+            font-weight: 200; 
+        }
+        .cards {
+            -webkit-filter: grayscale(0%); 
+            filter: grayscale(0%); 
+        }
+        .ocultar__texto{
+            background-color: var(--cor-preto);
+            color: var(--cor-branco);
+        }
     }
-    .home__foto {
-        display: block;
-        padding: 25% 0 0 0;
-        width: 50%;
-    }
-    .conteudo__texto {
-        padding-left: 5%;
-    }
-    .sobre-mim {
-        padding: 0;
-        padding-bottom: 50%;
-        margin: 0;
-    }
-    .sobre-mim__texto {
-        line-height: 1.5rem;
-        letter-spacing: 0.05rem;
-        width:90%;
-        font-size: 1.5rem; 
-    }
-    .texto__oculto {
-        width:100%;
-    }
-    .habilidades {
-        padding: 2% 15% 20% 15%;
-    }
-    .ocultar__texto {
-        width: 10rem;
-        height: 5rem;
-    }
-    .sobre-mim__foto {
-        margin-top: 12rem;
-    }
-    .projetos__titulo {
-        padding-bottom: 5rem;
-    }
-    .projetos__cards {
-        width:  15rem;
-        height: 15rem;
-    }
-    .projetos__projetos .projetos__cards:nth-child(n+5) {
-        display: none;
-    }
-    .projetos__cards {
-        width: 25rem;
-        height: 25rem;
-    }
-    .card__descricao {
-        font-weight: 200; 
-    }
-    .cards {
-        -webkit-filter: grayscale(0%); 
-        filter: grayscale(0%); 
-    }
-    .ocultar__texto{
-        background-color: var(--cor-preto);
-        color: var(--cor-branco);
-    }
-}
 
 
 @media screen and (max-width: 600px) { 
@@ -563,6 +587,7 @@ body {
         font-size: 1rem;
     }
     .home__foto {
+        display: block;
         padding-top: 22%;
         width: 60%;
     }
